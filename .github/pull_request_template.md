@@ -7,13 +7,13 @@
 
 ---
 
-## 📌 작업 유형 (필수 - 1개 이상 선택)
-- [ ] 🚀 신규기능 / 고도화 (Type: Feature)
-- [ ] 🐛 결함 / 버그 수정 (Type: Bug)
-- [ ] 🚨 운영 장애 / 긴급 핫픽스 (Type: Hotfix)
-- [ ] ♻️ 기술부채 / 리팩터링 (Type: Refactor)
-- [ ] 🔧 상시 유지보수 / CI/CD / 환경설정 (Type: Chore)
-- [ ] 📝 기획 / 정책 / 문서 (Type: Docs)
+## 작업 유형 (필수 - 1개 이상 선택)
+- [ ] 신규기능 / 고도화 (Type: Feature)
+- [ ] 결함 / 버그 수정 (Type: Bug)
+- [ ] 운영 장애 / 긴급 핫픽스 (Type: Hotfix)
+- [ ] 기술부채 / 리팩터링 (Type: Refactor)
+- [ ] 상시 유지보수 / CI/CD / 환경설정 (Type: Chore)
+- [ ] 기획 / 정책 / 문서 (Type: Docs)
 
 ---
 
