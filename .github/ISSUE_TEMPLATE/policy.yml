@@ -1,0 +1,53 @@
+name: "📋 [기획/정책] Policy & Spec"
+description: 서비스 요구사항, 요금/상품 정책, 아키텍처 설계, 기획 문서를 등록합니다.
+title: "[기획] [서비스명] "
+labels: ["Type: 기획/정책"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        기획 및 정책 정의, 요구사항 수립, 아키텍처 검토용 템플릿입니다.
+  - type: input
+    id: service
+    attributes:
+      label: 대상 서비스
+      placeholder: "예: 보안서비스, DBaaS"
+    validations:
+      required: true
+  - type: textarea
+    id: requirements
+    attributes:
+      label: 요구사항 및 정책 정의
+      description: 수립하고자 하는 정책의 핵심 내용과 결정 사항을 요약하세요.
+      placeholder: |
+        - 정책 요약:
+        - 주요 변경 내용 (요금, 규격, 인터페이스):
+    validations:
+      required: true
+  - type: textarea
+    id: deliverables
+    attributes:
+      label: 승인 산출물 및 링크
+      placeholder: |
+        - 기획서 원문 (Google Slides/Docs): 
+        - 화면 설계서 (Figma):
+        - 정책 결정 근거:
+    validations:
+      required: true
+  - type: textarea
+    id: schedule
+    attributes:
+      label: 목표 일정
+      placeholder: |
+        - 기획 완료(Internal Due): YYYY-MM-DD
+        - 개발 착수 예정일: YYYY-MM-DD
+        - 고객 오픈 목표(Customer GA): YYYY-MM-DD
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: 완료 조건
+      value: |
+        - [ ] 이해관계자(개발/운영/사업) 리뷰 및 합의 완료
+        - [ ] 산출물 링크 연결 및 하위 개발 Epic/이슈 생성
+    validations:
+      required: true

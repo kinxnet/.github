@@ -1,0 +1,61 @@
+name: "🚨 [장애/긴급] Incident & Hotfix"
+description: 서비스 중단, 긴급 패치(Hotfix), 보안 사고 등 긴급 대응 이슈를 등록합니다.
+title: "[긴급] [서비스명] "
+labels: ["Type: Hotfix", "P0-Critical"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        운영 장애 및 긴급 핫픽스 대응 템플릿입니다.
+        Findy Team+의 **변경 실패율(CFR)** 및 **평균 복구 시간(MTTR)** 지표 산출의 원천 데이터가 됩니다.
+  - type: input
+    id: service
+    attributes:
+      label: 영향 서비스명
+      placeholder: "예: 사용자 포털, 오픈스택 API"
+    validations:
+      required: true
+  - type: input
+    id: incident_time
+    attributes:
+      label: 장애 발생 및 감지 시각
+      description: 장애가 시작된 시각과 최초 인지 시각을 기재하세요. (MTTR 측정용)
+      placeholder: "발생: YYYY-MM-DD HH:MM / 감지: YYYY-MM-DD HH:MM"
+    validations:
+      required: true
+  - type: input
+    id: root_cause_release
+    attributes:
+      label: 원인 배포 / Release 링크
+      description: 장애의 원인이 된 직전 배포, PR 또는 커밋 링크를 기재하세요. (변경 실패율 CFR 추적용)
+      placeholder: "https://github.com/kinxnet/.../pull/123 또는 릴리스 태그"
+    validations:
+      required: false
+  - type: textarea
+    id: symptom
+    attributes:
+      label: 장애 현상 및 긴급 조치 내용
+      placeholder: |
+        - 현상:
+        - 긴급 조치 (롤백 / 파라미터 변경 / 임시 패치):
+    validations:
+      required: true
+  - type: textarea
+    id: recovery_time
+    attributes:
+      label: 복구 완료 확인 (MTTR 확정)
+      placeholder: |
+        - 정상화 확인 시각: 
+        - 헬스체크 및 트래픽 정상 인입 확인:
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: 후속 조치 조건
+      value: |
+        - [ ] 핫픽스 PR 배포 완료 (`Closes #이슈번호`)
+        - [ ] 장애 복구 시간(MTTR) 기록 및 정상 가동 확인
+        - [ ] 재발 방지 후속 과제 등록
+    validations:
+      required: true

@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "💬 프로세스/표준 질문 및 피드백"
+    url: "https://github.com/kinxnet/deployment-process-standard-draft/discussions"
+    about: "개발 프로세스 및 GitHub 운영 표준에 관한 문의를 남겨주세요."
