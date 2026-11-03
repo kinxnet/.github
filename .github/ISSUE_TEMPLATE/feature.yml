@@ -7,7 +7,7 @@ body:
     attributes:
       value: |
         새로운 기능 개발 또는 계획된 고도화 작업을 등록하는 템플릿입니다.
-        Findy Team+ 생산성 지표(투자 분류, 변경 리드타임)와 연계됩니다.
+        개발 리드타임 측정 및 엔지니어링 표준 지표(DORA 프레임워크 참조)와 연계됩니다.
   - type: input
     id: service
     attributes:

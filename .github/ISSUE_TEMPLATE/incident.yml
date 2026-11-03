@@ -7,7 +7,7 @@ body:
     attributes:
       value: |
         운영 장애 및 긴급 핫픽스 대응 템플릿입니다.
-        Findy Team+의 **변경 실패율(CFR)** 및 **평균 복구 시간(MTTR)** 지표 산출의 원천 데이터가 됩니다.
+        엔지니어링 신뢰성 지표(**변경 실패율 CFR** 및 **평균 복구 시간 MTTR**, DORA 프레임워크 참조) 산출의 원천 데이터가 됩니다.
   - type: input
     id: service
     attributes:
