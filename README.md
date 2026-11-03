@@ -17,4 +17,4 @@
 
 ## 운영 기준
 
-- 상세 표준: [kinxnet/deployment-process-standard-draft](https://github.com/kinxnet/deployment-process-standard-draft)
+- 상세 표준: [kinxnet/deployment-process-standard](https://github.com/kinxnet/deployment-process-standard)
