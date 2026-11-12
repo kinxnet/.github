@@ -11,8 +11,21 @@ body:
   - type: input
     id: service
     attributes:
-      label: 영향 서비스명
+      label: 영향 서비스 / 프로젝트명 (선택)
       placeholder: "예: 사용자 포털, 오픈스택 API"
+    validations:
+      required: false
+  - type: dropdown
+    id: layer
+    attributes:
+      label: 장애 발생 영역 (5대 표준 릴리즈 레이어)
+      description: 장애/핫픽스가 발생한 주 영역을 선택하세요.
+      options:
+        - "Layer: Infra-Ops"
+        - "Layer: Back-end"
+        - "Layer: Front-end"
+        - "Layer: QA-Test"
+        - "Layer: Plan"
     validations:
       required: true
   - type: input

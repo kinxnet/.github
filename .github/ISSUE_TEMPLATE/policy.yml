@@ -1,7 +1,7 @@
 name: "📋 [기획/정책] Policy & Spec"
 description: 서비스 요구사항, 요금/상품 정책, 아키텍처 설계, 기획 문서를 등록합니다.
-title: "[기획] [서비스명] "
-labels: ["Type: 기획/정책"]
+title: "[기획] "
+labels: ["Type: Spec", "Layer: Plan"]
 body:
   - type: markdown
     attributes:
@@ -10,10 +10,10 @@ body:
   - type: input
     id: service
     attributes:
-      label: 대상 서비스
-      placeholder: "예: 보안서비스, DBaaS"
+      label: 프로젝트 / 대상 서비스 (선택)
+      placeholder: "예: 보안서비스 재구성, DBaaS"
     validations:
-      required: true
+      required: false
   - type: textarea
     id: requirements
     attributes:

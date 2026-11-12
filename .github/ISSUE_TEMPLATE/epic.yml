@@ -1,0 +1,71 @@
+name: "🎯 [에픽/주 이슈] Epic"
+description: 여러 하위 작업(Sub-issues)을 묶는 서비스 프로젝트 주 이슈(Epic)를 등록합니다.
+title: "[프로젝트/서비스명] "
+labels: ["Type: Epic", "Layer: Plan"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        서비스 프로젝트의 주 이슈(**Epic**)를 등록하는 템플릿입니다.
+        생성 후 하위 구현·검증 작업들은 GitHub **Sub-issues**로 연결하여 진행률을 관리합니다.
+  - type: dropdown
+    id: priority
+    attributes:
+      label: "우선순위 (Priority)"
+      options:
+        - "P1 High (핵심 로드맵 / 주요 프로젝트)"
+        - "P0 Critical (최우선 긴급 과제)"
+        - "P2 Normal (일반 계획 과제)"
+        - "P3 Low (장기 검토 과제)"
+    validations:
+      required: true
+  - type: input
+    id: target_date
+    attributes:
+      label: "목표 완료일 (Target Date)"
+      description: "프로젝트(Epic) 최종 목표 완료일 (YYYY-MM-DD). Projects 보드의 Target Date 필드에도 동일하게 입력해 주세요."
+      placeholder: "YYYY-MM-DD"
+    validations:
+      required: true
+  - type: textarea
+    id: background
+    attributes:
+      label: "배경 및 목표"
+      description: "프로젝트 추진 배경과 달성하고자 하는 핵심 목표를 작성하세요."
+      placeholder: |
+        - 추진 배경:
+        - 핵심 목표 및 기대 효과:
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: "담당업무 범위 (5대 표준 레이어 기준)"
+      description: "하위 Sub-issue로 구성할 주요 작업 범위를 요약하세요. (해당 없는 영역은 생략)"
+      placeholder: |
+        - [Plan (기획/설계)]:
+        - [Back-end (백엔드 DB/API)]:
+        - [Front-end (콘솔/UI)]:
+        - [Infra-Ops (인프라/대외연동)]:
+        - [QA-Test (통합검증/릴리즈)]:
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: "완료 기준 (Acceptance Criteria / DoD)"
+      description: "이 Epic이 최종 완료되었다고 판단하는 기준입니다."
+      value: |
+        - [ ] 하위 Sub-issues 개발 및 코드 리뷰 완료
+        - [ ] 통합 검증(QA-Test) 및 배포 준비 완료
+        - [ ] 산출물(기획/API/운영 문서) 최신화 완료
+    validations:
+      required: true
+  - type: input
+    id: docs_link
+    attributes:
+      label: "관련 기획/설계 문서 링크"
+      description: "기획서(Figma, Google Slides/Docs), 아키텍처 문서 링크"
+      placeholder: "https://..."
+    validations:
+      required: false

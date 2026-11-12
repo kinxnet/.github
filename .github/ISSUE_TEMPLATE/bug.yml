@@ -10,21 +10,21 @@ body:
   - type: input
     id: service
     attributes:
-      label: 서비스명
+      label: 프로젝트 / 대상 서비스 (선택)
       placeholder: "예: 포털, D1, 보안서비스"
     validations:
-      required: true
+      required: false
   - type: dropdown
     id: layer
     attributes:
-      label: 발생 영역 (Layer)
+      label: 발생 영역 (5대 표준 릴리즈 레이어)
+      description: 결함이 발생한 아키텍처/작업 영역을 선택하세요.
       options:
         - "Layer: Back-end"
         - "Layer: Front-end"
-        - "Layer: API"
-        - "Layer: Core"
-        - "Layer: Infra"
-        - "Layer: 기타"
+        - "Layer: Infra-Ops"
+        - "Layer: QA-Test"
+        - "Layer: Plan"
     validations:
       required: true
   - type: dropdown

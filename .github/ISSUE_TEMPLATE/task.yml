@@ -1,0 +1,58 @@
+name: "🛠️ [일반작업/하위 태스크] Task"
+description: Epic 또는 Feature 하위의 세부 구현·설계·검증·인프라 실무 작업을 등록합니다.
+title: ""
+labels: ["Type: Task"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        상위 주 이슈(**Epic**) 또는 기능(**Feature**) 하위의 세부 실무 작업(**Sub-issue**)을 등록하는 템플릿입니다.
+  - type: dropdown
+    id: layer
+    attributes:
+      label: "작업 영역 (5대 표준 릴리즈 레이어)"
+      description: "주된 담당 업무 영역을 선택하세요."
+      options:
+        - "Layer: Back-end"
+        - "Layer: Front-end"
+        - "Layer: Infra-Ops"
+        - "Layer: QA-Test"
+        - "Layer: Plan"
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: "우선순위 (Priority)"
+      options:
+        - "P2 Normal (기본 작업)"
+        - "P1 High (선행 필수 / 중요 작업)"
+        - "P3 Low (단순 보완)"
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: "작업 내용"
+      description: "수행할 세부 작업 내용과 범위를 간결하게 작성하세요."
+      placeholder: |
+        - 작업 요약:
+        - 주요 변경 대상 (API, 화면, DB, 인프라 등):
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: "완료 기준 (Acceptance Criteria / DoD)"
+      value: |
+        - [ ] 작업 구현 및 검증 완료
+        - [ ] 관련 PR에 `Closes #이슈번호` 명시 및 연결
+    validations:
+      required: true
+  - type: input
+    id: target_due
+    attributes:
+      label: "목표 완료일 (Due Date - 선택)"
+      placeholder: "YYYY-MM-DD"
+    validations:
+      required: false
