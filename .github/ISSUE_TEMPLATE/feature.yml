@@ -1,6 +1,5 @@
 name: "🚀 [신규기능/고도화] Feature"
 description: 새 고객 기능 개발, 계획된 고도화, API/UI 개선 작업을 등록합니다.
-title: ""
 labels: ["Type: Feature"]
 body:
   - type: markdown

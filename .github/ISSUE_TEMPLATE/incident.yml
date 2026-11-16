@@ -1,6 +1,5 @@
 name: "🚨 [장애/긴급] Incident & Hotfix"
 description: 서비스 중단, 긴급 패치(Hotfix), 보안 사고 등 긴급 대응 이슈를 등록합니다.
-title: ""
 labels: ["Type: Hotfix", "P0-Critical"]
 body:
   - type: markdown

@@ -1,6 +1,5 @@
 name: "🐛 [결함/버그] Bug Report"
 description: 기대 동작과 다르게 동작하는 결함이나 오류를 보고합니다.
-title: ""
 labels: ["Type: Bug"]
 body:
   - type: markdown

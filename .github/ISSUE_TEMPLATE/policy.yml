@@ -1,6 +1,5 @@
 name: "📋 [기획/정책] Policy & Spec"
 description: 서비스 요구사항, 요금/상품 정책, 아키텍처 설계, 기획 문서를 등록합니다.
-title: ""
 labels: ["Type: Spec", "Layer: Plan"]
 body:
   - type: markdown

@@ -1,6 +1,5 @@
 name: "🎯 [에픽/주 이슈] Epic"
 description: 여러 하위 작업(Sub-issues)을 묶는 서비스 프로젝트 주 이슈(Epic)를 등록합니다.
-title: ""
 labels: ["Type: Epic", "Layer: Plan"]
 body:
   - type: markdown
