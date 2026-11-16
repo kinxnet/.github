@@ -1,13 +1,13 @@
 name: "🎯 [에픽/주 이슈] Epic"
 description: 여러 하위 작업(Sub-issues)을 묶는 서비스 프로젝트 주 이슈(Epic)를 등록합니다.
-title: "[프로젝트/서비스명] "
+title: ""
 labels: ["Type: Epic", "Layer: Plan"]
 body:
   - type: markdown
     attributes:
       value: |
         서비스 프로젝트의 주 이슈(**Epic**)를 등록하는 템플릿입니다.
-        생성 후 하위 구현·검증 작업들은 GitHub **Sub-issues**로 연결하여 진행률을 관리합니다.
+        분류 및 일정 속성은 우측 **Fields / Projects** 영역에서 관리하며, 하위 구현·검증 작업들은 GitHub **Sub-issues**로 연결합니다.
   - type: dropdown
     id: priority
     attributes:
@@ -22,11 +22,11 @@ body:
   - type: input
     id: target_date
     attributes:
-      label: "목표 완료일 (Target Date)"
-      description: "프로젝트(Epic) 최종 목표 완료일 (YYYY-MM-DD). Projects 보드의 Target Date 필드에도 동일하게 입력해 주세요."
+      label: "목표 완료일 (Target Date - 선택)"
+      description: "프로젝트(Epic) 목표 완료일 (YYYY-MM-DD). 미정 시 비워두고 우측 Projects 보드의 Target Date 필드에서 관리할 수 있습니다."
       placeholder: "YYYY-MM-DD"
     validations:
-      required: true
+      required: false
   - type: textarea
     id: background
     attributes:

@@ -1,19 +1,13 @@
 name: "🐛 [결함/버그] Bug Report"
 description: 기대 동작과 다르게 동작하는 결함이나 오류를 보고합니다.
-title: "[결함] [서비스명] "
+title: ""
 labels: ["Type: Bug"]
 body:
   - type: markdown
     attributes:
       value: |
         일반 결함 및 기능 오류를 등록하는 템플릿입니다.
-  - type: input
-    id: service
-    attributes:
-      label: 프로젝트 / 대상 서비스 (선택)
-      placeholder: "예: 포털, D1, 보안서비스"
-    validations:
-      required: false
+        프로젝트 및 분류 속성은 우측 **Fields / Projects** 영역에서 함께 관리합니다.
   - type: dropdown
     id: layer
     attributes:

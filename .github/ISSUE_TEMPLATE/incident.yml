@@ -1,6 +1,6 @@
 name: "🚨 [장애/긴급] Incident & Hotfix"
 description: 서비스 중단, 긴급 패치(Hotfix), 보안 사고 등 긴급 대응 이슈를 등록합니다.
-title: "[긴급] [서비스명] "
+title: ""
 labels: ["Type: Hotfix", "P0-Critical"]
 body:
   - type: markdown
@@ -8,13 +8,6 @@ body:
       value: |
         운영 장애 및 긴급 핫픽스 대응 템플릿입니다.
         엔지니어링 신뢰성 지표(**변경 실패율 CFR** 및 **평균 복구 시간 MTTR**, DORA 프레임워크 참조) 산출의 원천 데이터가 됩니다.
-  - type: input
-    id: service
-    attributes:
-      label: 영향 서비스 / 프로젝트명 (선택)
-      placeholder: "예: 사용자 포털, 오픈스택 API"
-    validations:
-      required: false
   - type: dropdown
     id: layer
     attributes:
